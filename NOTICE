@@ -1,0 +1,31 @@
+JELSTUDIO Software Suite - Project Credits
+-------------------------------------------------------------------------------
+
+Scripts:
+  - PruneSourceImageDataSetToGetCleanImageDataSetForLoraTraining (v1.0.0)
+
+-------------------------------------------------------------------------------
+COPYRIGHT
+-------------------------------------------------------------------------------
+
+Copyright 2026 JELSTUDIO
+
+All rights reserved. This repository contains software developed by JELSTUDIO.
+
+-------------------------------------------------------------------------------
+THIRD-PARTY SOFTWARE CREDITS
+-------------------------------------------------------------------------------
+The following software components are used across various scripts in this 
+repository. Please refer to their respective licenses.
+
+* mediapipe: Licensed under the Apache License 2.0.
+* NumPy: Licensed under the BSD 3-Clause License.
+* opencv-python: Licensed under the Apache License 2.0.
+* Pillow: Licensed under the HPND License.
+
+-------------------------------------------------------------------------------
+ACKNOWLEDGMENTS
+-------------------------------------------------------------------------------
+
+Special thanks to the open-source community for the tools that make 
+this suite of utilities possible.
