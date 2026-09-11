@@ -19,7 +19,7 @@ class LoRAOptimizer:
         # Variables
         self.source_dir = tk.StringVar()
         self.dest_dir = tk.StringVar()
-        self.face_sharpness_threshold = tk.IntVar(value=120) 
+        self.face_sharpness_threshold = tk.IntVar(value=100) 
         self.require_face = tk.BooleanVar(value=True)
         self.min_face_scale = tk.DoubleVar(value=0.03)
         self.target_count = tk.IntVar(value=60) # NEW: Target number of images
