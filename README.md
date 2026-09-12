@@ -5,7 +5,9 @@ A collection of various tools related to creating or pruning or working with dat
 ## Available tools
 List of currently available tools (Which may contain bugs or errors I haven't discovered yet. I use AI to assist with the coding and bug-hunting):
 
-- **PruneSourceImageDataSetToGetCleanImageDataSetForLoraTraining**:
+- **LoRA_Dataset_Optimizer**:
+   - version 1.1.0
+   - This update attempts to make a more diversified image-selection where it looks for both face-size and face-sharpness and face-angle. The goal is to have the chosen images be those that will create the most flexible LoRA.
    - version 1.0.0
    - Reads a source-folder of assorted images of a person you want to train a LoRA on, and then looks for suitable faces and ranks all images after sharpness, and then copies the "winners" to a new folder which you can then train on with your favorite trainer.
    This version's defaults are tuned to create a dataset suitable for use in Fizgig using Fizgig's default-settings (For a character-LoRA of a human, not a style-LoRA)
@@ -48,11 +50,11 @@ Follow these steps in order to set up the project:
 
 2. **Run a script**. This will open a GUI of the selected tool (This is just an example of 1 tool, so change the file-name to the desired tool if necessary) :
    ```bash
-   python PruneSourceImageDataSetToGetCleanImageDataSetForLoraTraining.py
+   python LoRA_Dataset_Optimizer_v1.0.0.py
    ```
 
 ## Running the Application (Using the bat-file on Windows)
-1. **Double-click the bat-file** (Requires the VENV to be named "venv311") : 'PruneSourceImageDataSetToGetCleanImageDataSetForLoraTraining.bat'
+1. **Double-click the bat-file** (Requires the VENV to be named "venv311") : 'LoRA_Dataset_Optimizer_v1.0.0.bat'
 
 ## License
 This project is licensed under the Apache License 2.0 (modified for jurisdiction) — see the LICENSE.txt file for details. A NOTICE file is included in this repo.
