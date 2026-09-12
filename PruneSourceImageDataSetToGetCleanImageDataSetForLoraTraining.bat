@@ -1,3 +1,0 @@
-call venv311\scripts\activate
-python PruneSourceImageDataSetToGetCleanImageDataSetForLoraTraining.py
-pause
