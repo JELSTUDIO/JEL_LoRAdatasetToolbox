@@ -2,7 +2,8 @@ JELSTUDIO Software Suite - Project Credits
 -------------------------------------------------------------------------------
 
 Scripts:
-  - PruneSourceImageDataSetToGetCleanImageDataSetForLoraTraining (v1.0.0)
+  - LoRA_Dataset_Optimizer
+  - face_mediapipe_bounding_box_saver
 
 -------------------------------------------------------------------------------
 COPYRIGHT
@@ -21,7 +22,6 @@ repository. Please refer to their respective licenses.
 * mediapipe: Licensed under the Apache License 2.0.
 * NumPy: Licensed under the BSD 3-Clause License.
 * opencv-python: Licensed under the Apache License 2.0.
-* Pillow: Licensed under the HPND License.
 
 -------------------------------------------------------------------------------
 ACKNOWLEDGMENTS

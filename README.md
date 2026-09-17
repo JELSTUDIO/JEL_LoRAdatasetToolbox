@@ -6,11 +6,18 @@ A collection of various tools related to creating or pruning or working with dat
 List of currently available tools (Which may contain bugs or errors I haven't discovered yet. I use AI to assist with the coding and bug-hunting):
 
 - **LoRA_Dataset_Optimizer**:
+   - version 1.3.0
+   - Code-restructure to make image-selections much less fragile and to fix some errors that resulted in incorrect selections previously.
    - version 1.1.0
    - This update attempts to make a more diversified image-selection where it looks for both face-size and face-sharpness and face-angle. The goal is to have the chosen images be those that will create the most flexible LoRA.
    - version 1.0.0
    - Reads a source-folder of assorted images of a person you want to train a LoRA on, and then looks for suitable faces and ranks all images after sharpness, and then copies the "winners" to a new folder which you can then train on with your favorite trainer.
    This version's defaults are tuned to create a dataset suitable for use in Fizgig using Fizgig's default-settings (For a character-LoRA of a human, not a style-LoRA)
+
+- **face_mediapipe_bounding_box_saver**:
+   - version 1.0.0
+   - Reads a source-folder of assorted images of a person you want to train a LoRA on, and then looks for faces and ranks all images after the actual face-size in pixels (From largest to smallest), and then copies all the detected faces (Cropped to the actual size of the detected bounding-box) to a new folder where you can then evaluate the results manually. The file-names will be structured like this: "A_wBhCtD", where A is the rank on the hitlist (1 being the largest) so the images sort correctly using the file-name, B is the width of the bounding-box in pixels, C is the height, D is the total amount of pixels in the bounding-box (Width times height) which is used for scoring the size (This is to avoid a 50x50 image from scoring lower than a 10x100 image). A file-name example could be: "1_w930h930t864900.png", which means the largest of the batch, with a width and height of 930 pixels resulting in a total pixel-amount of 864900.
+   The same detection and sorting mechanism is used in the "LoRA_Dataset_Optimizer", so the purpose of the "face_mediapipe_bounding_box_saver" is mostly so one can verify what the optimizer actually "sees".
 
 ## Prerequisites
 Before installing, ensure you have the following software installed on your Windows system:
