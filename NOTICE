@@ -4,6 +4,7 @@ JELSTUDIO Software Suite - Project Credits
 Scripts:
   - LoRA_Dataset_Optimizer
   - face_mediapipe_bounding_box_saver
+  - duplicate_finder
 
 -------------------------------------------------------------------------------
 COPYRIGHT
